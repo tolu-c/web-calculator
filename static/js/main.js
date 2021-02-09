@@ -1,29 +1,3 @@
-// testing displaying clicked buttons
-
-// // let ansDisplay = new Array;
-// let unit = document.getElementById('1').id;
-// // console.log(unit);
-// ansDisplay.push(unit);
-
-// // console.log(ansDisplay);
-// // let questionDisplayBox = document.getElementById('question');
-// let displayAnswer = questionDisplayBox.innerHTML = ansDisplay;
-// console.log(displayAnswer);
-
-// // adding event listeners function to display clicked buttons
-
-// let newUnit = document.getElementById('7');
-// // console.log(newUnit.id);
-// newUnit.addEventListener('click', type);
-// function type() {
-//     let unit = newUnit.id;
-//     console.log(unit);
-//     ansDisplay.push(unit);
-//     let stringifiedArray = JSON.stringify(ansDisplay);
-//     let display7 = questionDisplayBox.innerHTML = stringifiedArray;
-//     return display7;
-// }
-
 // real functions
 // variables (global)
 let ansDisplay = new Array;
