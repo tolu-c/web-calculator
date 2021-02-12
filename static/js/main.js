@@ -158,6 +158,11 @@ let backspace = document.getElementById('backspace');
 backspace.addEventListener('click', backSpace);
 function backSpace() {
     ansDisplay.pop();
+    let arrLen = ansDisplay.length;
+    if (arrLen === 0) {
+        let displayZero = questionDisplayBox.innerHTML = 0;
+        return displayZero;
+    }
     let backSpaceNum = questionDisplayBox.innerHTML = ansDisplay.join('');
     return backSpaceNum
 }
