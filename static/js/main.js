@@ -20,8 +20,10 @@ let plus = document.getElementById('plus');
 let minus = document.getElementById('minus');
 let multiply = document.getElementById('multiply');
 let divide = document.getElementById('divide');
+let clear = document.getElementById('clear');
 
 // event listener for all number and operations
+// num1,num2,num3,num4,num5,num6,num7,num8,num9,num0,point,plus,minus,multiply,divide.addEventListener('click', allFunc);
 num1.addEventListener('click', type1);
 num2.addEventListener('click', type2);
 num3.addEventListener('click', type3);
@@ -146,6 +148,11 @@ function typeDivide() {
     return output;
 }
 
+// refactored function
+function allFunc() {
+    
+}
+
 // backspace function
 let backspace = document.getElementById('backspace');
 backspace.addEventListener('click', backSpace);
@@ -153,4 +160,18 @@ function backSpace() {
     ansDisplay.pop();
     let backSpaceNum = questionDisplayBox.innerHTML = ansDisplay.join('');
     return backSpaceNum
+}
+
+// clear function
+clear.addEventListener('click', clearQueAndAns);
+function clearQueAndAns() {
+    questionDisplayBox.innerHTML = 0;
+    answerDisplayBox.innerHTML = 0;
+}
+
+// equals function
+let eq = document.getElementById('equals');
+eq.addEventListener('click', output);
+function output() {
+    alert()
 }
