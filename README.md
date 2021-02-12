@@ -11,3 +11,13 @@ Link -
 
 Font Awesome - Free/Paid icons, almost all icons are available, but you will have to pay fro the better ones
 Link - [fontawesom](https://fontawesome.com/)
+
+
+fall back code(refactored code to add all buttons to one event listener to a function)
+```
+allNum.forEach(function(num) {
+    num.addEventListener('click', function() {
+        console.log('it worked');
+    })
+})
+```
