@@ -10,8 +10,4 @@ Link -
 ```
 
 Font Awesome - Free/Paid icons, almost all icons are available, but you will have to pay fro the better ones
-Link - 
-```
-<script src="https://kit.fontawesome.com/9c672bfd73.js" crossorigin="anonymous"></script>
-```
-[alink](omnifood.github.io)
+Link - [fontawesom](https://fontawesome.com/)
