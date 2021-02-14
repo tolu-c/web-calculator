@@ -4,40 +4,6 @@ let ansDisplay = new Array;
 let questionDisplayBox = document.getElementById('question');
 let answerDisplayBox = document.getElementById('answer');
 
-let plus = document.getElementById('plus');
-let minus = document.getElementById('minus');
-let multiply = document.getElementById('multiply');
-let divide = document.getElementById('divide');
-
-function typePlus() {
-    let sign = plus.innerHTML;
-    console.log(sign);
-    ansDisplay.push(sign);
-    let output = questionDisplayBox.innerHTML = ansDisplay.join('');
-    return output;
-}
-function typeMinus() {
-    let sign = minus.innerHTML;
-    console.log(sign);
-    ansDisplay.push(sign);
-    let output = questionDisplayBox.innerHTML = ansDisplay.join('');
-    return output;
-}
-function typeMultiply() {
-    let sign = multiply.innerHTML;
-    console.log(sign);
-    ansDisplay.push(sign);
-    let output = questionDisplayBox.innerHTML = ansDisplay.join('');
-    return output;
-}
-function typeDivide() {
-    let sign = divide.innerHTML;
-    console.log(sign);
-    ansDisplay.push(sign);
-    let output = questionDisplayBox.innerHTML = ansDisplay.join('');
-    return output;
-}
-
 // refactored function
 
 let allNum = document.querySelectorAll('.num');
@@ -64,6 +30,42 @@ allSigns.forEach(sign => {
     })
 })
 
+let ansArr = ansDisplay;
+console.log(ansArr);
+let p = document.getElementById('plus');
+p.addEventListener('click', add);
+
+
+// operations functions //num1, num2
+function add() {
+    // let findIndexOfPlus = ansDisplay.findIndex(function(sign, [1], ansDisplay) {
+        
+    // });
+    console.log(findIndexOfPlus);
+    // num1 = Number(ansDisplay[0]);
+    // num2 = Number(ansDisplay[2]);
+    // console.log(`${num1}`); //, ${num2}
+    // num1++;
+    // let result = num1 + num2;
+    // console.log(result);
+}
+function minus(num1, num2) {
+    let result = num1 + num2;
+    return result;
+}
+function multiply(num1, num2) {
+    let result = num1 * num2;
+    return result;
+}
+function divide(num1, num2) {
+    let result = num1 / num2;
+    return result;
+}
+function percent(num1, num2) {
+    let result = (num1 / num2) * 100;
+    return result;
+}
+
 // backspace function
 let backspace = document.getElementById('backspace');
 backspace.addEventListener('click', backSpace);
@@ -82,6 +84,8 @@ function backSpace() {
 let clear = document.getElementById('clear');
 clear.addEventListener('click', clearQueAndAns);
 function clearQueAndAns() {
+    ansDisplay = [];
+    console.log(ansDisplay);
     questionDisplayBox.innerHTML = 0;
     answerDisplayBox.innerHTML = 0;
 }
