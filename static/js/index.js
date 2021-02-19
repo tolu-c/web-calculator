@@ -43,6 +43,12 @@ allNum.forEach(num => {
         display.push(actualNum);
         questionDisplayBox.innerHTML = display.join('');
         console.log(display);
+        let s = String(display);
+        console.log(s);
+        s.split(',');
+        console.log('the length of s is :',s.length);
+        let f = parseFloat(s)
+        console.log(f);
         
     })
 })
