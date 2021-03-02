@@ -1,96 +1,112 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Web Calculator</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='static/css/main.css'>
-    <link rel="stylesheet" href="static/css/grid.css">
-</head>
-<body>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="static/css/main.css"
+    />
+    <link rel="stylesheet" href="static/css/grid.css" />
+  </head>
+  <body>
     <main>
-        <section class="questionAndAnswer">
-            <div class="question" id="question">0</div>
-            <div class="answer" id="answer">0123456789</div>
-        </section>
-        <section class="keys">
-            <div class="row">
-                <div class="col-4">
-                    <div class="symbol" id="clear">C</div>
-                </div>
-                <div class="col-4">
-                    <div class="symbol" id="backspace"><ion-icon name="backspace"></ion-icon></div>
-                </div>
-                <div class="col-4">
-                    <div class="symbol"><i class="fas fa-percentage"></i></div>
-                </div>
-                <div class="col-4">
-                    <div class="signs" id="divide">/</div>
-                </div>
+      <section class="questionAndAnswer">
+        <div class="question" id="question"></div>
+        <div class="answer" id="answer"></div>
+      </section>
+      <section class="keys">
+        <div class="row">
+          <div class="col-4">
+            <div class="symbol" id="clear">C</div>
+          </div>
+          <div class="col-4">
+            <div class="symbol" id="backspace">
+              <!--<ion-icon name="backspace"></ion-icon>-->B
             </div>
-            <div class="row">
-                <div class="col-4">
-                    <div class="num" id="7">7</div>
-                </div>
-                <div class="col-4">
-                    <div class="num" id="8">8</div>
-                </div>
-                <div class="col-4">
-                    <div class="num" id="9">9</div>
-                </div>
-                <div class="col-4">
-                    <div class="signs" id="multiply"><ion-icon name="close"></ion-icon></div>
-                </div>
+          </div>
+          <div class="col-4">
+            <div class="symbol"><i class="fas fa-percentage"></i></div>
+          </div>
+          <div class="col-4">
+            <div class="signs" id="divide">/</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-4">
+            <div class="num" id="7">7</div>
+          </div>
+          <div class="col-4">
+            <div class="num" id="8">8</div>
+          </div>
+          <div class="col-4">
+            <div class="num" id="9">9</div>
+          </div>
+          <div class="col-4">
+            <div class="signs" id="multiply">×</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-4">
+            <div class="num" id="4">4</div>
+          </div>
+          <div class="col-4">
+            <div class="num" id="5">5</div>
+          </div>
+          <div class="col-4">
+            <div class="num" id="6">6</div>
+          </div>
+          <div class="col-4">
+            <div class="signs" id="minus">-</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-4">
+            <div class="num" id="1">1</div>
+          </div>
+          <div class="col-4">
+            <div class="num" id="2">2</div>
+          </div>
+          <div class="col-4">
+            <div class="num" id="3">3</div>
+          </div>
+          <div class="col-4">
+            <div class="signs" id="plus">+</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-2">
+            <div class="col-2">
+              <div class="num" id="0">0</div>
             </div>
-            <div class="row">
-                <div class="col-4">
-                    <div class="num" id="4">4</div>
-                </div>
-                <div class="col-4">
-                    <div class="num" id="5">5</div>
-                </div>
-                <div class="col-4">
-                    <div class="num" id="6">6</div>
-                </div>
-                <div class="col-4">
-                    <div class="signs" id="minus"><ion-icon name="remove"></ion-icon></div>
-                </div>
+            <div class="col-2">
+              <div class="num bold" id="point"><b>.</b></div>
             </div>
-            <div class="row">
-                <div class="col-4">
-                    <div class="num" id="1">1</div>
-                </div>
-                <div class="col-4">
-                    <div class="num" id="2">2</div>
-                </div>
-                <div class="col-4">
-                    <div class="num" id="3">3</div>
-                </div>
-                <div class="col-4">
-                    <div class="signs" id="plus"><ion-icon name="add"></ion-icon></div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-2">
-                    <div class="col-2">
-                        <div class="num" id="0">0</div>
-                    </div>
-                    <div class="col-2">
-                        <div class="num bold" id="point"><b>.</b></div>
-                    </div>
-                </div>
-                <div class="col-2">
-                    <div class="symbol" id="equals">=</div>
-                </div>
-            </div>
-        </section>
+          </div>
+          <div class="col-2">
+            <div class="symbol" id="equals">=</div>
+          </div>
+        </div>
+      </section>
     </main>
-    <!-- icons scripts -->
+
     <script src="static/js/index.js"></script>
-    <!-- <script src="static/js/main.js"></script> -->
-    <script src="https://kit.fontawesome.com/9c672bfd73.js" crossorigin="anonymous"></script>
-    <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule="" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script>
-</body>
+    <!-- icons scripts -->
+    <script
+      src="https://kit.fontawesome.com/9c672bfd73.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>
