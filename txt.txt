@@ -1,0 +1,9 @@
+ // console.log(containerArr);
+    // console.log(`the index of ${actualSign} is ${currentIndexOfSign}`);
+    // console.log(`the index before of ${actualSign} is ${beforeIndexOfSign} and its current value is
+    // ${containerArr[beforeIndexOfSign]}`);
+    // console.log(
+    //   `the value before ${actualSign} is ${containerArr[beforeIndexOfSign]}`
+    // );
+
+    

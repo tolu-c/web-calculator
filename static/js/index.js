@@ -50,6 +50,7 @@ function backspaceFunc() {
 // num functions
 allNum.forEach((num) => {
   num.addEventListener("click", () => {
+    // attempt to fix the dot
     // if (num.textContent) {
     //   actualNum = 0.0;
     // }
@@ -57,11 +58,11 @@ allNum.forEach((num) => {
     console.log(`the number clicked is ${actualNum}`);
     numArray.push(actualNum);
     containerArr.push(actualNum);
-    let x = numArray.join("");
-    let num1 = Number(x);
+    x = numArray.join("");
+    num1 = Number(x);
     answerBox.textContent = x;
     console.log(`the number array is ${numArray}`);
-    console.log(`number is ${x}`);
+    console.log('the num is ',num1);
   });
 });
 // have to fix the '.' shii
@@ -69,9 +70,13 @@ allNum.forEach((num) => {
 // signs function
 allSigns.forEach((sign) => {
   sign.addEventListener("click", () => {
+    let ans;
     actualSign = sign.textContent;
     console.log(actualSign);
     containerArr.push(actualSign);
+
+    console.log(`num1 from numbers is ${num1}`);
+    prevAns = num1;
 
     // makes it possible that when a sign is clicked before a number has no effect(like that)
     if (containerArr.lastIndexOf(actualSign) === 0) {
@@ -90,18 +95,12 @@ allSigns.forEach((sign) => {
     let beforeIndexOfSign = currentIndexOfSign - 1;
     // debugging console
 
-    // console.log(containerArr);
-    // console.log(`the index of ${actualSign} is ${currentIndexOfSign}`);
-    // console.log(`the index before of ${actualSign} is ${beforeIndexOfSign} and its current value is
-    // ${containerArr[beforeIndexOfSign]}`);
-    // console.log(
-    //   `the value before ${actualSign} is ${containerArr[beforeIndexOfSign]}`
-    // );
     // ensures a sign clicked more than once has no effect
     if (containerArr[currentIndexOfSign] === containerArr[beforeIndexOfSign]) {
       console.log(`you hit ${actualSign} twice`);
       containerArr.pop();
     }
+
     // makes changing of signs possible after a sign has been originally clicked
     // checks both current and before current index are both signs
     // and not signs and nums
@@ -119,6 +118,20 @@ allSigns.forEach((sign) => {
 
     switch (actualSign) {
       case "+":
+        ans = num1 + 0;
+        console.log(ans);
+        break;
+
+      case "-":
+        alert(ans);
+        break;
+
+      case "/":
+        alert(ans);
+        break;
+
+      case "×":
+        alert(ans);
         break;
 
       default:
@@ -132,5 +145,5 @@ allSigns.forEach((sign) => {
 
 // equals function
 function equals() {
-  console.log("equals");
+  questionBox.textContent = containerArr.join("");
 }

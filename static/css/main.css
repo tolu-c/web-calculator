@@ -1,68 +1,74 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-rendering: optimizeLegibility;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
 }
 body {
-    font-size: 20px;
-    font-family: sans-serif;
+  font-size: 20px;
+  font-family: sans-serif;
 }
 main {
-    width: 720px;
-    margin: 50px auto;
+  width: 720px;
+  margin: 50px auto;
 }
-.questionAndAnswer, .question, .answer {
-    width: 100%;
+.questionAndAnswer,
+.question,
+.answer {
+  width: 100%;
 }
 .question {
-    padding: 15px;
-    text-align: right;
-    height: 50px;
-    background-color: lightblue;
-    border-bottom: 0.5px solid rgba(0, 0, 0, 0.288);
-    color: gray;
+  padding: 15px;
+  text-align: right;
+  height: 50px;
+  background-color: lightblue;
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.288);
+  color: gray;
 }
 .answer {
-    padding: 20px 30px;
-    height: 75px;
-    text-align: right;
-    background-color: cadetblue;
-    /* border: 0; */
-    margin-top: 00.5px;
-    border-bottom: 0.5px solid rgba(0, 0, 0, 0.288);
-    font-weight: 600;
-    font-size: 150%;
+  padding: 20px 30px;
+  height: 75px;
+  text-align: right;
+  background-color: cadetblue;
+  /* border: 0; */
+  margin-top: 00.5px;
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.288);
+  font-weight: 600;
+  font-size: 150%;
 }
 .keys {
-    width: 100%;
+  width: 100%;
 }
-.signs, .num, .symbol {
-    text-align: center;
-    font-size: 150%;
-    cursor: pointer;
-    height: 75px;
-    padding-top: 20px;
-    border: 1px solid rgba(10, 10, 4, 0.815);
-    margin: 5px 0;
-    border-radius: 5px;
-    box-shadow: 1.5px 1.5px 10px gray;
-    transition: transform 0.3s, font-size 0.3s;
+.signs,
+.num,
+.symbol {
+  text-align: center;
+  font-size: 150%;
+  cursor: pointer;
+  height: 75px;
+  padding-top: 20px;
+  border: 1px solid rgba(10, 10, 4, 0.815);
+  margin: 5px 0;
+  border-radius: 5px;
+  box-shadow: 1.5px 1.5px 10px gray;
+  transition: transform 0.3s, font-size 0.3s;
 }
-.signs, .symbol {
-    color: orangered;
-    font-weight: 600;
+.signs,
+.symbol {
+  color: orangered;
+  font-weight: 600;
 }
 .bold {
-    padding-top: 15px;
+  padding-top: 15px;
 }
-.signs:hover, .num:hover {
-    transform: scale(1.12);
-    font-size: 175%;
+.signs:hover,
+.num:hover {
+  transform: scale(1.12);
+  font-size: 175%;
 }
 .symbol:hover {
-    transform: scale(1.06);
+  transform: scale(1.06);
 }
 .signs:last-child:hover {
-    transform: scale(1.06);
+  transform: scale(1.06);
 }
