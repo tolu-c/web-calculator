@@ -145,5 +145,14 @@ allSigns.forEach((sign) => {
 
 // equals function
 function equals() {
+  let lastIndexOfContainerArr = containerArr.length - 1;
+  let obj = containerArr[lastIndexOfContainerArr]
+  if (obj === sign) {
+    console.log(true)
+  }
+  else{
+    console.log(false)
+  }
+  console.log(containerArr[lastIndexOfContainerArr])
   questionBox.textContent = containerArr.join("");
 }
