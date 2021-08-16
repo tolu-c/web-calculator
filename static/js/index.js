@@ -36,9 +36,10 @@ function clearFunc() {
 // backspace function
 function backspaceFunc() {
   numArray.pop();
-  containerArr.pop();
+  // containerArr.pop();
   answerBox.textContent = numArray.join("");
   let aL = numArray.length;
+  console.log(`the length o the array is ${aL}`);
   if (aL > 0) {
     answerBox.textContent = numArray.join("");
   } else {
@@ -62,7 +63,7 @@ allNum.forEach((num) => {
     num1 = Number(x);
     answerBox.textContent = x;
     console.log(`the number array is ${numArray}`);
-    console.log('the num is ',num1);
+    console.log("the num is ", num1);
   });
 });
 // have to fix the '.' shii
@@ -146,13 +147,12 @@ allSigns.forEach((sign) => {
 // equals function
 function equals() {
   let lastIndexOfContainerArr = containerArr.length - 1;
-  let obj = containerArr[lastIndexOfContainerArr]
+  let obj = containerArr[lastIndexOfContainerArr];
   if (obj === sign) {
-    console.log(true)
+    console.log(true);
+  } else {
+    console.log(false);
   }
-  else{
-    console.log(false)
-  }
-  console.log(containerArr[lastIndexOfContainerArr])
+  console.log(containerArr[lastIndexOfContainerArr]);
   questionBox.textContent = containerArr.join("");
 }
