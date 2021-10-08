@@ -124,15 +124,15 @@ allSigns.forEach((sign) => {
         break;
 
       case "-":
-        alert(ans);
+        // alert(ans);
         break;
 
       case "/":
-        alert(ans);
+        // alert(ans);
         break;
 
       case "×":
-        alert(ans);
+        // alert(ans);
         break;
 
       default:
